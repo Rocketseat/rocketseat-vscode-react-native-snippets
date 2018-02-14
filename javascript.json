@@ -66,6 +66,17 @@
     "description": "Create component defaultProps"
   },
 
+  "constructor": {
+    "prefix": "ctor",
+    "description": "Create constructor method on Stateful Component",
+    "body": [
+      "constructor(props) {",
+      "  super(props);",
+      "  this.state = {};",
+      "}"
+    ]
+  },
+
   "render": {
     "prefix": "render",
     "body": ["render() {", "  return (", "    ${1:<View />}", "  );", "}"],
@@ -293,7 +304,7 @@
       "    [",
       "      \"module-resolver\",",
       "      {",
-      "				 \"cwd\": \"babelrc\",",
+      "        \"cwd\": \"babelrc\",",
       "        \"root\": [\"./src\"],",
       "        \"extensions\": [\".js\", \".ios.js\", \".android.js\"]",
       "      }",

@@ -82,6 +82,15 @@ static propTypes = {};
 static defaultProps = {};
 ```
 
+#### [ctor] - Create Stateful Component Constructor Method
+
+```javascript
+constructor(props) {
+  super(props);
+  this.state = {};
+}
+```
+
 #### [render] - Create Stateful Component render method
 
 ```javascript
