@@ -138,7 +138,8 @@
       "  });",
       "",
       "  return configureStore(rootReducer, rootSaga);",
-      "};"
+      "};",
+      ""
     ],
     "description": "Create Redux Setup file"
   },
@@ -167,7 +168,8 @@
       "  // sagaMiddleware.run(rootSaga);",
       "",
       "  return store;",
-      "};"
+      "};",
+      ""
     ],
     "description": "Create configureStore file"
   },
@@ -183,7 +185,7 @@
       "",
       "// import styles from './styles';",
       "",
-      "class ${1:MyComponent}} extends Component {",
+      "class ${1:MyComponent} extends Component {",
       "  render() {",
       "    return (",
       "      <View />",
@@ -195,7 +197,7 @@
       "",
       "const mapDispatchToProps = dispatch => ({});",
       "",
-      "export default connect(mapStateToProps, mapDispatchToProps)(${1:MyComponent}});",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:MyComponent});",
       ""
     ],
     "description": "Create react-native Redux component"
@@ -212,7 +214,7 @@
       "",
       "// import styles from './styles';",
       "",
-      "const ${1:MyComponent}} = () => (",
+      "const ${1:MyComponent} = () => (",
       "  <View />",
       ");",
       "const mapStateToProps = state => ({",
@@ -223,7 +225,8 @@
       "",
       "});",
       "",
-      "export default connect(mapStateToProps, mapDispatchToProps)(${1:MyComponent}});"
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1:MyComponent});",
+      ""
     ],
     "description": "Create react-native stateless Redux component"
   },
@@ -270,7 +273,8 @@
       "",
       "export const reducer = createReducer(INITIAL_STATE, {",
       "// [Types.ACTION_TYPE]: reducer,",
-      "});"
+      "});",
+      ""
     ],
     "description": "Create react-native duck module"
   },
