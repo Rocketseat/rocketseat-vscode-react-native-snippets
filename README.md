@@ -2,4 +2,4 @@
 
 To download just search for "Rocketseat" inside VSCode extensions.
 
-https://github.com/Rocketseat/rocketseat-vscode-react-native-snippets
+https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactNative
