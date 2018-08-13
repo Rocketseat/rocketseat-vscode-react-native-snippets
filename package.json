@@ -1,0 +1,42 @@
+{
+  "name": "RocketseatReactNative",
+  "description": "React Native snippets created by Rocketseat.",
+  "version": "1.0.0",
+  "displayName": "Rocketseat React Native",
+  "publisher": "rocketseat",
+  "icon": "images/rocketseat.png",
+  "galleryBanner": {
+    "theme": "dark"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rocketseat/vscode-rocketseat-react-native"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
