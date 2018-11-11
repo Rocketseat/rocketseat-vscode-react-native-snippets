@@ -8,7 +8,7 @@
       "",
       "// import styles from './styles';",
       "",
-      "export default class ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} extends Component {",
+      "export default class ${TM_FILENAME_BASE} extends Component {",
       "  render() {",
       "    return <View />;",
       "  }",
@@ -27,9 +27,9 @@
       "",
       "// import styles from './styles';",
       "",
-      "const ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} = () => <View />;",
+      "const ${TM_FILENAME_BASE} = () => <View />;",
       "",
-      "export default ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}};",
+      "export default ${TM_FILENAME_BASE};",
       ""
     ],
     "description": "Create react-native stateless component"
@@ -74,7 +74,7 @@
       "",
       "// import styles from './styles';",
       "",
-      "class ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} extends Component {",
+      "class ${TM_FILENAME_BASE} extends Component {",
       "  render() {",
       "    return <View />;",
       "  }",
@@ -88,7 +88,7 @@
       "export default connect(",
       "  // mapStateToProps,",
       "  // mapDispatchToProps",
-      ")(${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}});",
+      ")(${TM_FILENAME_BASE});",
       ""
     ],
     "description": "Create react-native Redux component"
@@ -106,7 +106,7 @@
       "",
       "// import styles from './styles';",
       "",
-      "const ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} = () => <View />;",
+      "const ${TM_FILENAME_BASE} = () => <View />;",
       "",
       "// const mapStateToProps = state => ({});",
       "",
@@ -116,7 +116,7 @@
       "export default connect(",
       "  // mapStateToProps,",
       "  // mapDispatchToProps",
-      ")(${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}});",
+      ")(${TM_FILENAME_BASE});",
       ""
     ],
     "description": "Create react-native stateless Redux component"
