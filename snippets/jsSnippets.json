@@ -1,0 +1,323 @@
+{
+  "statefulComponent": {
+    "prefix": "rnc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "import { View } from 'react-native';",
+      "",
+      "// import styles from './styles';",
+      "",
+      "export default class ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} extends Component {",
+      "  render() {",
+      "    return <View />;",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Create React Native Stateful Component"
+  },
+
+  "statefulReduxComponent": {
+    "prefix": "rnrc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "import { View } from 'react-native';",
+      "",
+      "import { bindActionCreators } from 'redux';",
+      "import { connect } from 'react-redux';",
+      "",
+      "// import styles from './styles';",
+      "",
+      "class ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} extends Component {",
+      "  render() {",
+      "    return <View />;",
+      "  }",
+      "}",
+      "",
+      "const mapStateToProps = state => ({});",
+      "",
+      "// const mapDispatchToProps = dispatch =>",
+      "//   bindActionCreators(Actions, dispatch);",
+      "",
+      "export default connect(",
+      "  mapStateToProps,",
+      "  // mapDispatchToProps",
+      ")(${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}});",
+      ""
+    ],
+    "description": "Create React Native Stateful Redux Component"
+  },
+
+  "statelessComponent": {
+    "prefix": "rnsc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import { View } from 'react-native';",
+      "",
+      "// import styles from './styles';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => <View />;",
+      "",
+      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};",
+      ""
+    ],
+    "description": "Create React Native Stateless Component"
+  },
+
+  "statelessReduxComponent": {
+    "prefix": "rnrsc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import { View } from 'react-native';",
+      "",
+      "import { bindActionCreators } from 'redux';",
+      "import { connect } from 'react-redux';",
+      "",
+      "// import styles from './styles';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => <View />;",
+      "",
+      "const mapStateToProps = state => ({});",
+      "",
+      "// const mapDispatchToProps = dispatch =>",
+      "//   bindActionCreators(Actions, dispatch);",
+      "",
+      "export default connect(",
+      "  mapStateToProps,",
+      "  // mapDispatchToProps",
+      ")(${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}});",
+      ""
+    ],
+    "description": "Create React Native Stateless Redux Component"
+  },
+
+  "styles": {
+    "prefix": "styles",
+    "body": [
+      "import { StyleSheet } from 'react-native';",
+      "",
+      "const styles = StyleSheet.create({",
+      "  ${1}",
+      "});",
+      "",
+      "export default styles;",
+      ""
+    ],
+    "description": "Create React Native Style file"
+  },
+
+  "api": {
+    "prefix": "api",
+    "body": [
+      "import { axios } from 'axios';",
+      "",
+      "const api = axios.create({",
+      "  baseUrl: ${1},",
+      "});",
+      "",
+      "export default api;",
+      ""
+    ],
+    "description": "Create Axios Configuration file"
+  },
+
+  "mapStateToProps": {
+    "prefix": "mapstatetoprops",
+    "body": ["const mapStateToProps = state => ({", "  ${1}", "});"],
+    "description": "Create Redux method mapStateToProps"
+  },
+
+  "mapDispatchToProps": {
+    "prefix": "mapdispatchtoprops",
+    "body": [
+      "const mapDispatchToProps = dispatch =>",
+      "  bindActionCreators(${1}, dispatch);"
+    ],
+    "description": "Create Redux method mapDispatchToProps"
+  },
+
+  "createStore": {
+    "prefix": "create-store",
+    "body": [
+      "import { createStore, compose, applyMiddleware } from 'redux';",
+      "import createSagaMiddleware from 'redux-saga';",
+      "",
+      "import reducers from './ducks';",
+      "import sagas from './sagas';",
+      "",
+      "const middlewares = [];",
+      "",
+      "const sagaMonitor = __DEV__ ? console.tron.createSagaMonitor() : null;",
+      "",
+      "const sagaMiddleware = createSagaMiddleware({ sagaMonitor });",
+      "",
+      "middlewares.push(sagaMiddleware);",
+      "",
+      "const composer = __DEV__",
+      "  ? compose(",
+      "    applyMiddleware(...middlewares),",
+      "    console.tron.createEnhancer(),",
+      "  )",
+      "  : compose(applyMiddleware(...middlewares));",
+      "",
+      "const store = createStore(reducers, composer);",
+      "",
+      "sagaMiddleware.run(sagas);",
+      "",
+      "export default store;"
+    ],
+    "description": "Create Store index.js file"
+  },
+
+  "ducksIndex": {
+    "prefix": "ducks-index",
+    "body": [
+      "import { combineReducers } from 'redux';",
+      "",
+      "const reducers = combineReducers({",
+      "  // Remova essa linha depois de adicionar seus ducks",
+      "  example: () => [],",
+      "});",
+      "",
+      "export default reducers;",
+      ""
+    ],
+    "description": "Create Ducks index.js file"
+  },
+
+  "sagasIndex": {
+    "prefix": "sagas-index",
+    "body": [
+      "import { all } from 'redux-saga/effects';",
+      "",
+      "export default function* rootSaga() {",
+      "  yield all([]);",
+      "}",
+      ""
+    ],
+    "description": "Create Sagas index.js file"
+  },
+
+  "duck": {
+    "prefix": "duck",
+    "body": [
+      "import Immutable from 'seamless-immutable';",
+      "",
+      "export const Types = {${1}};",
+      "",
+      "const INITIAL_STATE = Immutable({${2}});",
+      "",
+      "export default function ${3:${TM_FILENAME_BASE/(.*)$/${1:/capitalize}/}}(state = INITIAL_STATE, action) {",
+      "  switch (action.type) {",
+      "    default:",
+      "      return state;",
+      "  }",
+      "}",
+      "",
+      "export const Creators = {};",
+      ""
+    ],
+    "description": "Create React Native Duck Module"
+  },
+
+  "reduxSauceDuck": {
+    "prefix": "rsduck",
+    "body": [
+      "import { createReducer, createActions } from 'reduxsauce';",
+      "import Immutable from 'seamless-immutable';",
+      "",
+      "/* Types & Action Creators */",
+      "",
+      "const { Types, Creators } = createActions({",
+      "// actionType: ['dataPassed'],",
+      "});",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(.*)$/${1:/capitalize}/}}Types = Types;",
+      "export default Creators;",
+      "",
+      "/* Initial State */",
+      "",
+      "export const INITIAL_STATE = Immutable({",
+      "// data: [],",
+      "});",
+      "",
+      "/* Reducers */",
+      "",
+      "// export const reducer = state =>",
+      "//   state.merge({ data: [] });",
+      "",
+      "/* Reducers to types */",
+      "",
+      "export const reducer = createReducer(INITIAL_STATE, {",
+      "// [Types.ACTION_TYPE]: reducer,",
+      "});",
+      ""
+    ],
+    "description": "Create React Native Duck Module with Reduxsauce"
+  },
+
+  "reactotronConfig": {
+    "prefix": "reactotron-rn",
+    "body": [
+      "import Reactotron from 'reactotron-react-native';",
+      "",
+      "if (__DEV__) {",
+      "  const tron = Reactotron",
+      "    .configure()",
+      "    .useReactNative()",
+      "    .connect();",
+      "",
+      "  tron.clear();",
+      "",
+      "  console.tron = tron;",
+      "}",
+      ""
+    ],
+    "description": "Create React Native Reactotron Config"
+  },
+
+  "reactotronReduxConfig": {
+    "prefix": "reactotron-redux-rn",
+    "body": [
+      "import Reactotron from 'reactotron-react-native';",
+      "import { reactotronRedux } from 'reactotron-redux';",
+      "import sagaPlugin from 'reactotron-redux-saga';",
+      "",
+      "if (__DEV__) {",
+      "  const tron = Reactotron.configure()",
+      "    .use(reactotronRedux())",
+      "    .use(sagaPlugin())",
+      "    .connect();",
+      "",
+      "  tron.clear();",
+      "",
+      "  console.tron = tron;",
+      "}",
+      ""
+    ],
+    "description": "Create React Native Reactotron Config with Redux and Redux Saga"
+  },
+
+  "babelConfig": {
+    "prefix": "babel-config",
+    "body": [
+      "module.exports = {",
+      "  presets: ['module:metro-react-native-babel-preset'],",
+      "  plugins: [",
+      "    [",
+      "      'babel-plugin-root-import',",
+      "      {",
+      "        rootPathSuffix: 'src',",
+      "      },",
+      "    ],",
+      "  ],",
+      "};",
+      ""
+    ],
+    "description": "Create Babel Module Config file"
+  }
+}
