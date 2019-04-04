@@ -171,8 +171,8 @@
     "description": "Create Store index.js file"
   },
 
-  "ducksIndex": {
-    "prefix": "ducks-index",
+  "rootReducer": {
+    "prefix": "root-reducer",
     "body": [
       "import { combineReducers } from 'redux';",
       "",
@@ -187,8 +187,8 @@
     "description": "Create Ducks index.js file"
   },
 
-  "sagasIndex": {
-    "prefix": "sagas-index",
+  "rootSaga": {
+    "prefix": "root-saga",
     "body": [
       "import { all } from 'redux-saga/effects';",
       "",
