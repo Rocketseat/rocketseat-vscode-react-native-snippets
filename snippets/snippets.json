@@ -96,15 +96,13 @@
   },
 
   "styles": {
-    "prefix": "styles",
+    "prefix": "styled-rn",
     "body": [
-      "import { StyleSheet } from 'react-native';",
+      "import styled from 'styled-components/native';",
       "",
-      "const styles = StyleSheet.create({",
-      "  ${1}",
-      "});",
-      "",
-      "export default styles;",
+      "export const Container = styled.${1:View}`",
+      "  ${2}",
+      "`;",
       ""
     ],
     "description": "Create React Native Style file"
@@ -300,24 +298,5 @@
       ""
     ],
     "description": "Create React Native Reactotron Config with Redux and Redux Saga"
-  },
-
-  "babelConfig": {
-    "prefix": "babel-config",
-    "body": [
-      "module.exports = {",
-      "  presets: ['module:metro-react-native-babel-preset'],",
-      "  plugins: [",
-      "    [",
-      "      'babel-plugin-root-import',",
-      "      {",
-      "        rootPathSuffix: 'src',",
-      "      },",
-      "    ],",
-      "  ],",
-      "};",
-      ""
-    ],
-    "description": "Create Babel Module Config file"
   }
 }

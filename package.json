@@ -23,23 +23,19 @@
     "snippets": [
       {
         "language": "javascriptreact",
-        "path": "./snippets/jsSnippets.json"
+        "path": "./snippets/snippets.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/jsSnippets.json"
+        "path": "./snippets/snippets.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/jsSnippets.json"
+        "path": "./snippets/snippets.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/jsSnippets.json"
-      },
-      {
-        "language": "json",
-        "path": "./snippets/jsonSnippets.json"
+        "path": "./snippets/snippets.json"
       }
     ]
   }
