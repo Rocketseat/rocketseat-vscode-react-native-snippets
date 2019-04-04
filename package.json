@@ -1,11 +1,12 @@
 {
   "name": "RocketseatReactNative",
   "description": "React Native snippets created by Rocketseat.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "displayName": "Rocketseat React Native",
   "publisher": "rocketseat",
   "icon": "images/rocketseat.png",
   "galleryBanner": {
+    "color": "#7159c1",
     "theme": "dark"
   },
   "license": "MIT",

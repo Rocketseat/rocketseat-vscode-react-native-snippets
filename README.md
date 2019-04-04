@@ -58,7 +58,7 @@ Para instalar uma extensão você pode executar o **Command Pallete** através d
 
 Quando você instalar a Extensão o desenvolvimento em React Native será bem mais divertido.
 
-![create react component](https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-react-native-snippets/master/images/component.gif)
+![Create React Native Component](https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-react-native-snippets/master/images/component.gif)
 
 ### Snippets
 
@@ -74,7 +74,7 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 |                 `api →` | Cria um arquivo de configuração do Axios                                      |
 |     `mapstatetoprops →` | Cria o método `mapStateToProps` vazio                                         |
 |  `mapdispatchtoprops →` | Cria o método `mapDispatchToProps` vazio                                      |
-|        `create-store →` | Cria o arquivo de configuração do Redux, combinando os Ducks com os Sagas     |
+|     `create-store-rn →` | Cria o arquivo de configuração do Redux, combinando os Ducks com os Sagas     |
 |         `ducks-index →` | Cria o arquivo que combina os Reducers                                        |
 |         `sagas-index →` | Cria o arquivo que centraliza os Sagas                                        |
 |                `duck →` | Cria um Duck                                                                  |

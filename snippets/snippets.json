@@ -6,7 +6,7 @@
       "",
       "import { View } from 'react-native';",
       "",
-      "// import styles from './styles';",
+      "// import { Container } from './styles';",
       "",
       "export default class ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} extends Component {",
       "  render() {",
@@ -28,7 +28,7 @@
       "import { bindActionCreators } from 'redux';",
       "import { connect } from 'react-redux';",
       "",
-      "// import styles from './styles';",
+      "// import { Container } from './styles';",
       "",
       "class ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} extends Component {",
       "  render() {",
@@ -57,7 +57,7 @@
       "",
       "import { View } from 'react-native';",
       "",
-      "// import styles from './styles';",
+      "// import { Container } from './styles';",
       "",
       "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => <View />;",
       "",
@@ -77,7 +77,7 @@
       "import { bindActionCreators } from 'redux';",
       "import { connect } from 'react-redux';",
       "",
-      "// import styles from './styles';",
+      "// import { Container } from './styles';",
       "",
       "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => <View />;",
       "",
@@ -100,12 +100,12 @@
     "body": [
       "import styled from 'styled-components/native';",
       "",
-      "export const Container = styled.${1:View}`",
-      "  ${2}",
+      "export const ${1:Container} = styled.${2:View}`",
+      "  ${3}",
       "`;",
       ""
     ],
-    "description": "Create React Native Style file"
+    "description": "Create React Native Styled Components file"
   },
 
   "api": {
@@ -139,7 +139,7 @@
   },
 
   "createStore": {
-    "prefix": "create-store",
+    "prefix": "create-store-rn",
     "body": [
       "import { createStore, compose, applyMiddleware } from 'redux';",
       "import createSagaMiddleware from 'redux-saga';",
@@ -211,12 +211,13 @@
       "",
       "export default function ${3:${TM_FILENAME_BASE/(.*)$/${1:/capitalize}/}}(state = INITIAL_STATE, action) {",
       "  switch (action.type) {",
+      "    ${4}",
       "    default:",
       "      return state;",
       "  }",
       "}",
       "",
-      "export const Creators = {};",
+      "export const Creators = {${5}};",
       ""
     ],
     "description": "Create React Native Duck Module"
