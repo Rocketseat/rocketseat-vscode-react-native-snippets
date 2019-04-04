@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://rocketseat.com.br">
-    <img src="images/rocketseat_logo.png" alt="Logo">
+    <img src="https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-react-native-snippets/master/images/rocketseat_logo.png" alt="Logo">
   </a>
 
   <h3 align="center">React Native Snippets</h3>
@@ -58,7 +58,7 @@ Para instalar uma extensão você pode executar o **Command Pallete** através d
 
 Quando você instalar a Extensão o desenvolvimento em React Native será bem mais divertido.
 
-![create react component](images/component.gif)
+![create react component](https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-react-native-snippets/master/images/component.gif)
 
 ### Snippets
 
