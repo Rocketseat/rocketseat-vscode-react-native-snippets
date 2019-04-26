@@ -111,10 +111,10 @@
   "api": {
     "prefix": "api",
     "body": [
-      "import { axios } from 'axios';",
+      "import axios from 'axios';",
       "",
       "const api = axios.create({",
-      "  baseUrl: ${1},",
+      "  baseURL: ${1},",
       "});",
       "",
       "export default api;",
