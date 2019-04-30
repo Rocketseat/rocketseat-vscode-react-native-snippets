@@ -95,6 +95,23 @@
     "description": "Create React Native Stateless Redux Component"
   },
 
+  "componentFunctional": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "// import { Container } from './styles';",
+      "",
+      "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "  return (",
+      "    <div />",
+      "  );",
+      "}",
+      ""
+    ],
+    "description": "Create ReactJS Functional Component"
+  },
+
   "styles": {
     "prefix": "styled-rn",
     "body": [
