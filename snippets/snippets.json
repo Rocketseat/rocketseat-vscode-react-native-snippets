@@ -96,7 +96,7 @@
   },
 
   "componentFunctional": {
-    "prefix": "rfc",
+    "prefix": "rnfc",
     "body": [
       "import React from 'react';",
       "",
