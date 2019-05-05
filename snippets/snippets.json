@@ -99,12 +99,13 @@
     "prefix": "rnfc",
     "body": [
       "import React from 'react';",
+      "import { View } from 'react-native';",
       "",
       "// import { Container } from './styles';",
       "",
       "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
       "  return (",
-      "    <div />",
+      "    <View />",
       "  );",
       "}",
       ""
