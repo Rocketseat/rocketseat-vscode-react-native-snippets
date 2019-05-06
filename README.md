@@ -25,16 +25,63 @@
 ## Tabela de Conteúdo
 
 - [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
-- [Documentação](#documenta%C3%A7%C3%A3o)
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Começando](#come%C3%A7ando)
+  - [Instalação](#instala%C3%A7%C3%A3o)
+  - [Linguagens Suportadas](#linguagens-suportadas)
+  - [Como Usar?](#como-usar)
+  - [Snippets](#snippets)
 - [Contribuição](#contribui%C3%A7%C3%A3o)
 - [Licença](#licen%C3%A7a)
 - [Contato](#contato)
 
 <!-- ABOUT THE PROJECT -->
 
-## Documentação
+## Sobre o Projeto
 
-Você pode encontrar a documentação completa desse projeto na **[Documentação Oficial](https://docs.rocketseat.dev/react-native-snippets/introducao)**.
+Este projeto visa a disponibilização de um conjunto de Snippets ou atalhos para criação de componentes e arquivos de configuração em aplicações React Native.
+
+## Começando
+
+### Instalação
+
+Para instalar uma extensão você pode executar o **Command Pallete** através do comando `Ctrl + Shift + P` ou `Cmd + Shift + P` , digitar `Install Extensions` e por fim dar um `Enter`, feito isso pesquise por Rocketseat e você vai encontrar a extensão **Rocketseat React Native**.
+
+### Linguagens Suportadas
+
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)
+
+### Como Usar?
+
+Quando você instalar a Extensão o desenvolvimento em React Native será bem mais divertido.
+
+![Create React Native Component](https://raw.githubusercontent.com/Rocketseat/rocketseat-vscode-react-native-snippets/master/images/component.gif)
+
+### Snippets
+
+Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada um. O **⇥** significa a tecla `TAB`.
+
+|                 Gatilho | Conteúdo                                                                      |
+| ----------------------: | ----------------------------------------------------------------------------- |
+|                 `rnc →` | Cria um Componente **Stateful**                                               |
+|                `rnrc →` | Cria um Componente **Stateful** conectado ao **Redux**                        |
+|                `rnsc →` | Cria um Componente **Stateless**                                              |
+|               `rnrsc →` | Cria um Componente **Stateless** conectado ao **Redux**                       |
+|                `rnfc →` | Cria um Componente **Functional**                                             |
+|           `styled-rn →` | Cria um arquivo de Estilização com **Styled Components**                      |
+|                 `api →` | Cria um arquivo de configuração do Axios                                      |
+|     `mapstatetoprops →` | Cria o método `mapStateToProps` vazio                                         |
+|  `mapdispatchtoprops →` | Cria o método `mapDispatchToProps` vazio                                      |
+|     `create-store-rn →` | Cria o arquivo de configuração do Redux, combinando os Ducks com os Sagas     |
+|        `root-reducer →` | Cria o arquivo que combina os Reducers                                        |
+|           `root-saga →` | Cria o arquivo que centraliza os Sagas                                        |
+|                `duck →` | Cria um Duck                                                                  |
+|              `rsduck →` | Cria um Duck com **Reduxsauce**                                               |
+|       `reactotron-rn →` | Cria arquivo de configuração do **Reactotron**                                |
+| `reactotron-redux-rn →` | Cria arquivo de configuração do **Reactotron** com **Redux** + **Redux Saga** |
 
 <!-- CONTRIBUTING -->
 
