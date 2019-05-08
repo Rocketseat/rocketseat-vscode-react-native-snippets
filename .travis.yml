@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - '8'
+
+branches:
+  only:
+    - master
+
+cache:
+  yarn: true
+  
+before_publish:
+  - yarn global add vsce
+
+publish:
+  - vsce package
+  - vsce publish -p $TOKEN_VSCODE
+  
