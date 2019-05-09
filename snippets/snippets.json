@@ -317,5 +317,20 @@
       ""
     ],
     "description": "Create React Native Reactotron Config with Redux and Redux Saga"
+  },
+
+  "styleSheet": {
+    "prefix": "ssheet",
+    "body": [
+      "import { StyleSheet } from 'react-native';",
+      "",
+      "const styles = StyleSheet.create({",
+      "	$1",
+      "});",
+      "",
+      "export default styles;",
+      ""
+    ],
+    "description": "Create React Native StyleSheet file"
   }
 }
