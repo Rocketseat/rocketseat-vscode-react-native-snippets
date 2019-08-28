@@ -141,6 +141,17 @@
     "description": "Create Axios Configuration file"
   },
 
+  "handle": {
+    "prefix": "hdl",
+    "body": [
+      "const handle${1} = event => {",
+      "  event.preventDefault();",
+      "  ${2}",
+      "};"
+    ],
+    "description": "Create Handle Arrow Function"
+  },
+
   "mapStateToProps": {
     "prefix": "mapstatetoprops",
     "body": ["const mapStateToProps = state => ({", "  ${1}", "});"],
