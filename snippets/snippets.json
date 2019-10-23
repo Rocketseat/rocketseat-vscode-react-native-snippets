@@ -317,5 +317,10 @@
       ""
     ],
     "description": "Create React Native Reactotron Config with Redux and Redux Saga"
+  },
+  "Styled Component": {
+    "prefix": "stc",
+    "body": ["export const $1 = styled.$2`", "  $3", "`", ""],
+    "description": "Create Styled Component"
   }
 }
