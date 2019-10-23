@@ -82,6 +82,7 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 |              `rsduck →` | Cria um Duck com **Reduxsauce**                                               |
 |       `reactotron-rn →` | Cria arquivo de configuração do **Reactotron**                                |
 | `reactotron-redux-rn →` | Cria arquivo de configuração do **Reactotron** com **Redux** + **Redux Saga** |
+|                 `stc →` | Cria um Styled Component                                                      |
 
 <!-- CONTRIBUTING -->
 
