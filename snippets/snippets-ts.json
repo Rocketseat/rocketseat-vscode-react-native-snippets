@@ -20,12 +20,12 @@
       "",
       "// import { Container } from './styles';",
       "",
-      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: React.FC = () => {",
       "  return <View />;",
       "}",
       "",
       "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}"
     ],
-    "description": "Create React Native Functional Component"
+    "description": "Create React Native TypeScript Functional Component"
   }	
 }

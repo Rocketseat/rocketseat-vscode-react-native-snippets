@@ -1,7 +1,7 @@
 {
-  "name": "RocketseatReactNative",
+  "name": "rocketseatreactnative",
   "description": "React Native snippets created by Rocketseat.",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "displayName": "Rocketseat React Native",
   "publisher": "rocketseat",
   "icon": "images/rocketseat.png",
@@ -32,12 +32,15 @@
       },
       {
         "language": "typescript",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/snippets-ts.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/snippets-ts.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vsce": "^1.75.0"
   }
 }
