@@ -24,7 +24,7 @@
       "  return <View />;",
       "}",
       "",
-      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}"
+      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};"
     ],
     "description": "Create React Native TypeScript Functional Component"
   }	
