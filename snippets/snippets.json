@@ -12,7 +12,7 @@
     "description": "Create React Native Styled Components file"
   },
 
-  "componentFunctionalTypescript": {
+  "componentFunctional": {
     "prefix": "rnfc",
     "body": [
       "import React from 'react';",
@@ -20,7 +20,7 @@
       "",
       "// import { Container } from './styles';",
       "",
-      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
+      "function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
       "  return <View />;",
       "}",
       "",
